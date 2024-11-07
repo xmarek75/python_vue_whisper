@@ -1,3 +1,6 @@
+odkaz na googledoc:
+https://drive.google.com/drive/folders/1W7I88uB-WLCMmZrDJvgOlN2ZRojLLuSz?usp=sharing
+
 # myApp (vue_project)
 
 vue_quasar_python_project
