@@ -25,16 +25,16 @@
 export default {
   name: 'TryWhisper',
   methods: {
-    handleGetStarted() {
+    handleGetStarted () {
       // Přesměruje na stránku s detailním průvodcem
-      this.$router.push('/get-started');
+      this.$router.push('/try/get_started')
     },
-    handleLearnMore() {
+    handleLearnMore () {
       // Přesměruje na stránku s více informacemi
-      this.$router.push('/learn-more');
+      this.$router.push('/learn-more')
     }
   }
-};
+}
 </script>
 
 <style scoped>

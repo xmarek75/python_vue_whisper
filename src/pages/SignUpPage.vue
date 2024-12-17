@@ -42,22 +42,22 @@
 <script>
 export default {
   name: 'SignUpPage',
-  data() {
+  data () {
     return {
       name: '',
       email: '',
       password: ''
-    };
+    }
   },
   methods: {
-    handleSignUp() {
+    handleSignUp () {
       if (!this.name || !this.email || !this.password) {
         this.$q.notify({
           message: 'All fields are required',
           color: 'negative',
           position: 'top'
-        });
-        return;
+        })
+        return
       }
 
       // Simulace registrace (např. volání API)
@@ -65,13 +65,13 @@ export default {
         message: `Welcome, ${this.name}! Your account has been created.`,
         color: 'positive',
         position: 'top'
-      });
+      })
 
       // Přesměrování na jinou stránku, např. domovskou stránku
-      this.$router.push('/');
+      this.$router.push('/')
     }
   }
-};
+}
 </script>
 
 <style scoped>

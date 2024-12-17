@@ -32,6 +32,24 @@
           @click="$router.push('/try/try_without_registration')"
         />
       </q-card-actions>
+      <q-card-actions class="justify-center">
+        <q-btn
+          flat
+          label="Test whisper"
+          color="primary"
+          size="sm"
+          @click="$router.push('/try/Whisper')"
+        />
+      </q-card-actions>
+      <q-card-actions class="justify-center">
+        <q-btn
+          flat
+          label="TimeLine"
+          color="primary"
+          size="sm"
+          @click="$router.push('/try/TimeLineTest')"
+        />
+      </q-card-actions>
     </q-card>
   </div>
 </template>

@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "content": "What is she doing in the kitchen?",
+    "start": "2014-01-01T00:00:00",
+    "end": "2014-01-01T00:00:05"
+  },
+  {
+    "id": 2,
+    "content": "Cooking dinner. She is cooking dinner.",
+    "start": "2014-01-01T00:00:05",
+    "end": "2014-01-01T00:00:09"
+  },
+  {
+    "id": 3,
+    "content": "Is she washing dishes?",
+    "start": "2014-01-01T00:00:09",
+    "end": "2014-01-01T00:00:12"
+  },
+  {
+    "id": 4,
+    "content": "No, she isn't. She is not washing dishes.",
+    "start": "2014-01-01T00:00:12",
+    "end": "2014-01-01T00:00:16"
+  },
+  {
+    "id": 5,
+    "content": "She is cooking the meal. Cooking the dinner.",
+    "start": "2014-01-01T00:00:16",
+    "end": "2014-01-01T00:00:21"
+  },
+  {
+    "id": 6,
+    "content": "Is she cooking dinner in the garage?",
+    "start": "2014-01-01T00:00:21",
+    "end": "2014-01-01T00:00:25"
+  },
+  {
+    "id": 7,
+    "content": "No, she is not in the garage.",
+    "start": "2014-01-01T00:00:25",
+    "end": "2014-01-01T00:00:28"
+  },
+  {
+    "id": 8,
+    "content": "She is cooking the dinner in the kitchen.",
+    "start": "2014-01-01T00:00:28",
+    "end": "2014-01-01T00:00:31"
+  },
+  {
+    "id": 9,
+    "content": "If you want to complete your practice of this story,",
+    "start": "2014-01-01T00:00:31",
+    "end": "2014-01-01T00:00:34"
+  },
+  {
+    "id": 10,
+    "content": "you can go to EnglishEasyPractice.com",
+    "start": "2014-01-01T00:00:34",
+    "end": "2014-01-01T00:00:37"
+  },
+  {
+    "id": 11,
+    "content": "and download the audio lessons of the story.",
+    "start": "2014-01-01T00:00:37",
+    "end": "2014-01-01T00:00:40"
+  },
+  {
+    "id": 12,
+    "content": "So you can practice English with it whenever and wherever you want.",
+    "start": "2014-01-01T00:00:40",
+    "end": "2014-01-01T00:00:44"
+  },
+  {
+    "id": 13,
+    "content": "Just listen to our short stories and answer the easy question out loud.",
+    "start": "2014-01-01T00:00:44",
+    "end": "2014-01-01T00:00:49"
+  },
+  {
+    "id": 14,
+    "content": "You will improve your listening and speaking skills fast.",
+    "start": "2014-01-01T00:00:49",
+    "end": "2014-01-01T00:00:53"
+  },
+  {
+    "id": 15,
+    "content": "And that's all for now. See you at EnglishEasyPractice.com.",
+    "start": "2014-01-01T00:00:53",
+    "end": "2014-01-01T00:00:58"
+  }
+]

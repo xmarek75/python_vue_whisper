@@ -47,6 +47,22 @@ const routes = [
       {
         path: 'try_without_registration',
         component: () => import('pages/TryPage.vue')
+      },
+      {
+        path: 'get_started',
+        component: () => import('pages/GetStartedPage.vue')
+      },
+      {
+        path: 'whisper',
+        component: () => import('pages/WhisperPage.vue')
+      },
+      {
+        path: 'TimeLineTest',
+        component: () => import('pages/TimeLineTestPage.vue')
+      },
+      {
+        path: 'demo_project',
+        component: () => import('pages/DemoProjectPage.vue')
       }
     ]
   },

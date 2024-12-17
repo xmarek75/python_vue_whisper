@@ -25,19 +25,17 @@ export default {
         message: 'Please wait, Whisper is processing...', // Zpráva zobrazená v Snackbaru
         color: 'positive', // Barva (např. zelená pro pozitivní)
         position: 'top' // Umístění zprávy na obrazovce
-        // timeout: 0 // Délka zobrazení, 0 znamená, že se neukáže automaticky (ručně ho skryjeme)
       })
 
       try {
-        // Zavoláme funkci UseWhisper, která provádí nějakou operaci
+        // Zavoláme UseWhisper a počkáme na výsledek
         const result = await this.UseWhisper()
-        this.message = result // Získáme výsledek operace
+        this.message = result // Nastavíme výsledek operace do zprávy
         // Zobrazíme snackbar s výsledkem operace
         // this.$q.notify({
-        //   message: 'Completed',//this.message, // Zpráva, která se zobrazí, když je operace hotová
+        //   message: 'Completed: ' + result, // Výsledek zobrazený v notifikaci
         //   color: 'green', // Barva (zelená pro úspěch)
-        //   position: 'top', // Umístění zprávy
-        //   timeout: 0
+        //   position: 'top' // Umístění zprávy
         // })
       } catch (error) {
         console.error('Error:', error)
@@ -45,31 +43,30 @@ export default {
         this.$q.notify({
           message: 'Error occurred during Whisper operation!', // Chybová zpráva
           color: 'negative', // Červená barva pro chyby
-          position: 'top' // Umístění zprávy
+          position: 'top'
         })
       }
     },
-    UseWhisper () {
-      axios.get('http://127.0.0.1:8000/api/whisper')
-        .then(response => {
-          console.log('API response:', response)
-          this.message = response.data.message || 'No message in response'
-        })
-        .catch(error => {
-          console.error('Error fetching message:', error)
-          this.message = 'Failed to fetch message'
-        })
+
+    async UseWhisper () {
+      try {
+        const response = await axios.get('http://127.0.0.1:8000/api/whisper')
+        console.log('API response:', response)
+        return response.data.message || 'No message in response' // Vrací výsledek volání
+      } catch (error) {
+        console.error('Error fetching message:', error)
+        throw new Error('Failed to fetch message') // Vyvolá chybu pro správné zachycení v `handleClick`
+      }
     }
-    // handleClick() {
-    //   this.UseWhisper();  // Zavolání funkce při kliknutí na tlačítko
-    // }
   }
 }
 </script>
 
 <template>
   <div style="width: 50%; margin: 0 auto;">
-    <h5>{{ message }}</h5>
+    <!-- <h5>{{ message }}</h5> -->
+    <!-- <h7 v-html="message"></h7> -->
+    <h7>{{message}}</h7>
     <button @click="handleClick">click here</button>
     <br>
   </div>

@@ -41,14 +41,14 @@ export default {
     }
   },
   methods: {
-    handleLogin() {
+    handleLogin () {
       if (!this.username || !this.password) {
         this.$q.notify({
           message: 'Please enter both username and password',
           color: 'negative',
           position: 'top'
-        });
-        return;
+        })
+        return
       }
 
       // Simulate login process (e.g., API call)
@@ -57,19 +57,19 @@ export default {
           message: 'Login successful!',
           color: 'positive',
           position: 'top'
-        });
+        })
         // Redirect to a different page
-        this.$router.push('/try/try_without_registration'); // change route
+        this.$router.push('/try/try_without_registration') // change route
       } else {
         this.$q.notify({
           message: 'Invalid username or password',
           color: 'negative',
           position: 'top'
-        });
+        })
       }
     }
   }
-};
+}
 </script>
 
 <style scoped>
