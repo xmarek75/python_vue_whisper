@@ -263,7 +263,7 @@ video {
 
 .q-linear-progress {
   margin: 20px auto;
-  max-width: 600px;
+  max-width: 500px;
 }
 
 .q-card {
@@ -274,7 +274,7 @@ video {
 
 textarea {
   width: 100%;
-  height: 500px;
+  height: 450px;
   margin-bottom: 10px;
 }
 </style>
